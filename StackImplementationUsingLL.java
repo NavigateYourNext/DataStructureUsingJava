@@ -45,6 +45,19 @@ public class StackImplementationUsingLL
 			temp = temp.nextNode;
 		}
 	}
+	public boolean isEmpty() {
+		 return head==null;
+	}
+	
+	pubic static  int size(){
+	int length = 0;
+		Node temp = head;
+		while(temp.next != null){
+			length++;
+			temp = temp.next;
+	        }
+		return length;
+	}
 
 	public static void main(String[] args)
 	{
